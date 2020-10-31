@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+body{
+	background-color: #66ffff;
+	
+}
+.col-25 {
+	font-family: times new roman;
+	font-size: 16,5px;
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.col-30{
+	
+	margin:0;
+	position: absolute;
+	top:435px;
+	transform: translate(0, -50%);
+}	
+h1{
+	color: grey;
+	text-align: center;
+	font-family: times new roman;	
+}
+p{
+	color: red;
+	font-family: arial;
+}
+	
+</style>
+<title>Atualização de Cadastro</title>
+<body>
+<h1>Atualização de Informações Aluno</h1>	
+<form >
+
+
+<input type = "radio" style = "margin-left:340px" name = "Marital Status">
+<label for = mr.> Sr. </label>
+<input type = "radio" name = "Marital Status"> 
+<label for = lady> Sra. </label>
+<input type = "radio" name = "M,arital Status">
+<label for = miss> Srta. </label>
+<br>
+<div class = "col-25"><label for = fname>Nome Completo </label> </div>
+<div class = "col-75"><input type = "text" name = "fullname" value = "First Name"> </div>
+<div class = "col-25"><label for = "matricula"> Matrícula </label> </div>
+<div class = "col-75"><input type = "text"> </div>
+<div class = "col-25"><label for = "mae">Nome da Mãe </label> </div>
+<div class = "col-75"><input type = "text" name = "mail"> </div>
+<div class = "col-25"><label for = "mail">Nome do Pai </label> </div>
+<div class = "col-75"><input type = "text" name = "pai"> </div>
+<div class = "col-25"><label for = "city"> Cidade em que mora atualmente </label></div>
+<div class = "col-75"><input type = "text" name = "city"> </div>
+<div class = "col-25"><label for = "mail">Endereço de E-Mail </label> </div>
+<div class = "col-75"><input type = "text" name = "e-mail"> </div>
+<div class = "col-25"><label for = "mobile"> Telefone Celular </label> </div>
+<div class = "col-75"><input type = "text" name = "number" value = "+55"> </div>
+
+<div class = "col-25"><label for = "ensino"> Tipo de Ensino </label> </div>
+<div class = "col-75"><select id = "ensino" name = "tipo"></div>
+<option value = "EAD"> EAD </option>
+<option value = "Flex"> Flex </option>
+<option value = "Presencial"> Presencial </option>
+</select> </div>
+
+<div class = "col-25"><label for = "bolsa"> É bolsista? </label></div>
+<div class = "col-75"><input type = "text" name = "bolsa"> </div> 
+<div class = "col-25"><label for = "bolsa"> Tipo de Bolsa </label> </div>
+<div class = "col-75"><input type = "checkbox" name = "bolsa"> 100% </div>
+
+<div class = "col-25"><label for = "bolsa"> </label> </div>				
+<div class = "col-75"><input type = "checkbox" name = "bolsa"> 75% </div>
+<div class = "col-25"><label for = "bolsa"> </label> </div>
+<div class = "col-75"><input type = "checkbox" name = "bolsa"> 60% </div>
+<div class = "col-25"><label for = "language"> </label> </div>
+<div class = "col-75"><input type = "checkbox" name = "language"> 50% </div>
+
+
+<p id = "x"> ATENÇÃO! Revise antes de enviar !</p>
+<button type = "button" onclick = 'document.getElementById("x").innerHTML = "ENVIADO"'> ENVIAR </BUTTON>         
+</body>
+</head>
+</html>
